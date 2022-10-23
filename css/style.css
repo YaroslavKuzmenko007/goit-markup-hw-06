@@ -526,11 +526,11 @@ img {
 }
 
 /* розсилка */
-.mailing-footer-box {
+.footer-mail-box {
   margin-left: 93px;
 }
 
-.mailing-title {
+.footer-mail-title {
   font-family: "Roboto" sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -541,16 +541,16 @@ img {
   color: var(--color-white);
 }
 
-.mailing-footer {
+.footer-mailing {
   display: flex;
 }
 
-.form-mailing-footer {
+.form-footer-mailing {
   width: 358px;
   height: 50px;
 }
 
-.form-mailing-footer input {
+.form-footer-mailing input {
   width: 358px;
   height: 50px;
   margin: 0;
@@ -570,7 +570,7 @@ img {
   transition: var(--border-animation);
 }
 
-.mailing-btn-footer {
+.footter-mailing-btn {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -580,23 +580,20 @@ img {
   margin-left: 12px;
   width: 200px;
   height: 50px;
-
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-
   color: var(--color-white);
   background: var(--color-acent);
-
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
   transition: var(--box-shadow-animation);
 }
 
-.mailing-btn-footer:hover,
-.mailing-btn-footer:focus {
+.footter-mailing-btn:hover,
+.footter-mailing-btn:focus {
   background-color: var(--btn-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: var(--box-shadow-animation), var(--bg-animation);
@@ -748,6 +745,16 @@ img {
   align-items: center;
   justify-content: center;
 }
+.modal-close-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  fill: var(--btn-hover);
+  transition: var(--fill-animation);
+}
 
 .is-hidden {
   opacity: 0;
@@ -793,7 +800,6 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   color: var(--secondary-color);
 }
 
@@ -826,17 +832,15 @@ img {
 .form-input:hover ~ .form-icon,
 .form-input:focus ~ .form-icon {
   fill: var(--color-acent);
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--fill-animation);
 }
 
 .form-icon {
   position: absolute;
   left: 12px;
   bottom: 11px;
-  fill: #212121;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--main-color-font);
+  transition: var(--fill-animation);
 }
 
 .form-comment {
@@ -844,14 +848,9 @@ img {
   height: 120px;
   resize: none;
   padding: 12px 16px;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-textarea {
+  transition: var(--border-animation);
 }
 
 .form-comment:hover,
@@ -882,7 +881,7 @@ textarea {
 .checkbox-input:checked + .checkbox-icon {
   border-color: var(--color-acent);
   background-color: var(--color-acent);
-  background-image: url(../images/icon\check.svg);
+  background-image: url(../images/check.svg);
   background-size: contain;
   background-origin: border-box;
   transition: var(--bg-animation);
